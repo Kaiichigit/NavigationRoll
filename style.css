@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+}
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+    background-color: white;
+
+}
+
+.circularNav {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle {
+    background-color: turquoise;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+}
+
+.circle button {
+    color: blueviolet;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.circle button.open {
+    left: 60%;
+}
+
+.circle button.close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
